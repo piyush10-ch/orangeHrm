@@ -1,5 +1,5 @@
 class Login{
-    get usernameinput(){ return cy.get('input[name="username"]') }
+    get usernameinput(){ return cy.get('input[name="username"]', { timeout: 10000 }) }
     get passwordinput(){return cy.get('input[name="password"]')}
     get loginbtn(){return cy.get('.oxd-button.oxd-button--medium.oxd-button--main.orangehrm-login-button')}
 login(un,pw){
