@@ -2,6 +2,8 @@
     {"username":"Admin",
     "password":"admin123",
     "fname":"Piyush",
-    "lname":"Chaudhary"
+    "lname":"Chaudhary",
+    "ename":"Piyush Chaudhary",
+    "empid":"0001"
     }
   

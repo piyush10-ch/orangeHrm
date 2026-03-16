@@ -6,7 +6,7 @@ describe('template spec', () => {
   it('Login', () => {
     cy.visit('/')
     LoginPage.forgotpswrd()
-    LoginPage.login('Admin','admin123')
+    LoginPage.login(userdata.username,userdata.password)
     myinfo.pdetails(userdata.fname,userdata.lname)
    cy.logout()
    
