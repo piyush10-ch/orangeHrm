@@ -24,6 +24,9 @@ jobs:
           # start: npm start
           # wait-on: 'http://localhost:3000'
           browser: chrome
+          headed: true
+          env:
+           CYPRESS_ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
 
       - name: Upload Screenshots (on failure)
         if: failure()
